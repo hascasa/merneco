@@ -1,3 +1,5 @@
+// Import Axios for HTTP requests and various constants for action types
+
 import axios from 'axios';
 import { CART_CLEAR_ITEMS } from '../constants/cartConstants';
 import {
@@ -22,6 +24,7 @@ import {
 } from '../constants/orderConstants';
 import { logout } from './userActions';
 
+//  create a new order
 export const createOrder = (order) => async (dispatch, getState) => {
   try {
     dispatch({
@@ -64,6 +67,8 @@ export const createOrder = (order) => async (dispatch, getState) => {
     });
   }
 };
+
+//  update payment status of an order
 
 export const getOrderDetails = (id) => async (dispatch, getState) => {
   try {
