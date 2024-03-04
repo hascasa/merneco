@@ -19,7 +19,7 @@ As a seller/user, I want to have a responsive and secure e-commerce application 
 Frontend: Reactjs, Redux
 Backend: node.js, Mongodb, Mongoose, Express js
 Authentication: Javascript Web Token (JWT)
-Other tools: Paypal API  , Heroku
+Other tools: Paypal API 
 
 ```
 
@@ -30,7 +30,7 @@ Other tools: Paypal API  , Heroku
 In order to use this APP, you need terminal (mac: pre-installed) or gitbash (pc: must be installed). You also need to download and install [node.js](https://nodejs.org/en/) and [npm](www.npmjs.com) or [yarn](https://yarnpkg.com/) package manager. Open the cloned REPO in your favorite code editor, and then in terminal, enter the command “npm i“ or “yarn add” to install the dependencies. You will also need to signup for a free account at [mongodb.com](https://www.mongodb.com/). In addition, make sure to create a .env file on the project root, and input your own mongodb Atals config information. You also need to open a PayPal Developer Sandbox account [Link here](https://developer.paypal.com/developer/accounts/) in order to process the Paypal payment. Now you are ready to start using the app by entering “npm start” on your terminal or gitbash. 
 ## Credits and Reference
 
-The following links have helped me with this project. <br> [React Icons](https://react-icons.github.io/react-icons/) <br> [mongodb.com](https://www.mongodb.com/)<br> [Heroku](https://heroku.com) <br> [PayPal Developer Sandbox account](https://developer.paypal.com/developer/accounts/)
+The following links have helped me with this project. <br> [React Icons](https://react-icons.github.io/react-icons/) <br> [mongodb.com](https://www.mongodb.com/)<br> [PayPal Developer Sandbox account](https://developer.paypal.com/developer/accounts/)
 
 ## Tests
 
