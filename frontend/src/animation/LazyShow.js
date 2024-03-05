@@ -1,3 +1,5 @@
+
+// Import  hooks and utilities from React and framer-motion
 import React, { useEffect, useRef, useState } from 'react'
 import {
   motion,
@@ -8,10 +10,13 @@ import {
 function useOnScreen(ref, rootMargin = '0px') {
   const [isIntersecting, setIntersecting] = useState(false)
 
+    // Effect hook to observe changes in intersection status with the viewport
   useEffect(() => {
     let currentRef = null
     const observer = new IntersectionObserver(
       ([entry]) => {
+
+                // Updates state based on whether the observed element is intersecting
         setIntersecting(entry.isIntersecting)
       },
       {
@@ -29,7 +34,7 @@ function useOnScreen(ref, rootMargin = '0px') {
 
   return isIntersecting
 }
-
+// Functional component that animates its children when they scroll into view
 const LazyShow = (props) => {
   const controls = useAnimation()
   const rootRef = useRef()
@@ -59,5 +64,5 @@ const LazyShow = (props) => {
     </AnimatePresence>
   )
 }
-
+// Export the LazyShow component for use in other parts of the application
 export default LazyShow
